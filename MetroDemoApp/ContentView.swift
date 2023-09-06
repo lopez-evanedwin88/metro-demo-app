@@ -8,14 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var users: [User] = []
+    @StateObject var usersVM = GithubAPI()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            NavigationView {
+                List {
+                    ForEach(users) { user in
+                        ZStack {
+                            NavigationLink(destination: UserDetailView(user: user)) {
+                                UserRowView(user: user)
+                                    .onAppear {
+//                                        loadMore()
+                                    }
+                            }
+                        }
+                    }
+                }
+                .navigationTitle("Github users")
+            }
+        }
+        .task {
+            do {
+                users = try await usersVM.fetchUsers()
+            } catch {
+                print(error)
+            }
         }
         .padding()
+    }
+}
+
+private extension ContentView {
+    func loadMore(_ user: User) {
+//        let threshold = items
     }
 }
 

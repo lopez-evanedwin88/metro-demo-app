@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct UserRowView: View {
+    
+    let user: User
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                Text("Name: \(user.login)")
+                Text("Github profile \(user.html_url)")
+            }
+            .padding()
+        }
     }
 }
 
 struct UserRowView_Previews: PreviewProvider {
     static var previews: some View {
-        UserRowView()
+        UserRowView(user: .init(id: 0, login: "Dongski", avatar_url: "http://test.com", html_url: "http://test.com/profile"))
     }
 }

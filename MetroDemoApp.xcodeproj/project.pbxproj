@@ -14,6 +14,10 @@
 		04C2CF962AA8549E00F1B7B5 /* MetroDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2CF952AA8549E00F1B7B5 /* MetroDemoAppTests.swift */; };
 		04C2CFA02AA8549E00F1B7B5 /* MetroDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2CF9F2AA8549E00F1B7B5 /* MetroDemoAppUITests.swift */; };
 		04C2CFA22AA8549E00F1B7B5 /* MetroDemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2CFA12AA8549E00F1B7B5 /* MetroDemoAppUITestsLaunchTests.swift */; };
+		04C2CFB22AA8566900F1B7B5 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2CFB12AA8566900F1B7B5 /* UserDetailView.swift */; };
+		04C2CFB42AA856D500F1B7B5 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2CFB32AA856D500F1B7B5 /* UserRowView.swift */; };
+		04C2CFB92AA857CF00F1B7B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2CFB82AA857CF00F1B7B5 /* User.swift */; };
+		04C2CFBC2AA859D000F1B7B5 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2CFBB2AA859D000F1B7B5 /* GithubAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		04C2CF9B2AA8549E00F1B7B5 /* MetroDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C2CF9F2AA8549E00F1B7B5 /* MetroDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroDemoAppUITests.swift; sourceTree = "<group>"; };
 		04C2CFA12AA8549E00F1B7B5 /* MetroDemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroDemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04C2CFB12AA8566900F1B7B5 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		04C2CFB32AA856D500F1B7B5 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		04C2CFB82AA857CF00F1B7B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04C2CFBB2AA859D000F1B7B5 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		04C2CF832AA8549C00F1B7B5 /* MetroDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				04C2CFBA2AA859C200F1B7B5 /* Api */,
+				04C2CFB52AA8574600F1B7B5 /* Model */,
+				04C2CFAE2AA8562600F1B7B5 /* View */,
 				04C2CF842AA8549C00F1B7B5 /* MetroDemoAppApp.swift */,
 				04C2CF862AA8549C00F1B7B5 /* ContentView.swift */,
 				04C2CF882AA8549E00F1B7B5 /* Assets.xcassets */,
@@ -125,6 +136,31 @@
 				04C2CFA12AA8549E00F1B7B5 /* MetroDemoAppUITestsLaunchTests.swift */,
 			);
 			path = MetroDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		04C2CFAE2AA8562600F1B7B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C2CFB12AA8566900F1B7B5 /* UserDetailView.swift */,
+				04C2CFB32AA856D500F1B7B5 /* UserRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C2CFB52AA8574600F1B7B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C2CFB82AA857CF00F1B7B5 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04C2CFBA2AA859C200F1B7B5 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				04C2CFBB2AA859D000F1B7B5 /* GithubAPI.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C2CFB22AA8566900F1B7B5 /* UserDetailView.swift in Sources */,
+				04C2CFBC2AA859D000F1B7B5 /* GithubAPI.swift in Sources */,
 				04C2CF872AA8549C00F1B7B5 /* ContentView.swift in Sources */,
+				04C2CFB42AA856D500F1B7B5 /* UserRowView.swift in Sources */,
+				04C2CFB92AA857CF00F1B7B5 /* User.swift in Sources */,
 				04C2CF852AA8549C00F1B7B5 /* MetroDemoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
