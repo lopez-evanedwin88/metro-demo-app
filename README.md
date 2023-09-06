@@ -1,3 +1,3 @@
-# metro-demo-app
+# MM-demo-app
 
-### Metro Mart Demo App
+### MM Demo App
